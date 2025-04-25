@@ -1,0 +1,48 @@
+1. mkdir monorepo-js
+cd monorepo-js
+git init
+
+2. touch README.md LICENSE .gitignore
+nano .gitignore
+nano README.md
+nano LICENSE
+git add --all
+git commit -m "initial commit"
+
+3. mkdir backend
+touch backend/.gitkeep
+git add backend/
+git commit -m "add empty backend directory"
+
+4. git remote add origin https://github.com/AbialaFaith/monorepo-js.git
+git branch -M main
+
+5. git push -u origin main
+
+6. git branch frontend-Layout
+git checkout frontend-Layout
+
+7. mkdir -p frontend/src/components frontend/src/containers
+touch frontend/src/components/.gitkeep frontend/src/containers/.gitkeep
+git add frontend/
+git commit -m "chore: add components and containers directory to frontend"
+
+8. touch frontend/src/index.js
+nano frontend/src/index.js
+git add frontend/src/index.js
+git commit -m "add content dynamically to page via JavaScript"
+
+9. git push -u origin frontend-Layout
+
+10. git checkout main
+git merge frontend-Layout
+
+11. mkdir -p frontend/public
+touch frontend/public/index.html
+nano frontend/public/index.html
+git add frontend/public/index.html
+git commit -m "add index.html file"
+
+12. git push -u origin main
+
+13. git branch commands
