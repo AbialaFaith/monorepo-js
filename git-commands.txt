@@ -3,9 +3,9 @@ cd monorepo-js
 git init
 
 2. touch README.md LICENSE .gitignore
-nano .gitignore
-nano README.md
-nano LICENSE
+code .gitignore
+code README.md
+code LICENSE
 git add --all
 git commit -m "initial commit"
 
@@ -28,7 +28,7 @@ git add frontend/
 git commit -m "chore: add components and containers directory to frontend"
 
 8. touch frontend/src/index.js
-nano frontend/src/index.js
+code frontend/src/index.js
 git add frontend/src/index.js
 git commit -m "add content dynamically to page via JavaScript"
 
@@ -39,7 +39,7 @@ git merge frontend-Layout
 
 11. mkdir -p frontend/public
 touch frontend/public/index.html
-nano frontend/public/index.html
+code frontend/public/index.html
 git add frontend/public/index.html
 git commit -m "add index.html file"
 
